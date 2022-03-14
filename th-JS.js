@@ -2,7 +2,7 @@ let mobileNav = $('#mobileNav')
 mobileNav.on('click', function () {
     $('ul.mobileUl').slideToggle('slow')
 })
-slideToggle可以讓選單向下滑入
+// slideToggle可以讓選單向下滑入
 
 // js寫法
 // let mobileNav2 = document.getElementById('mobileNav')

@@ -53,15 +53,10 @@ nav ul li{
     color: black;
 }
 nav ul.mobileUl{
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    align-items: center;
-}
-nav ul.mobileUl{
     display: none;
     flex-direction: column;
     list-style-type: none;
+    align-items: center;
 }
 /* 設定變化在a */
 nav ul li a{
@@ -125,7 +120,7 @@ section.sideBox{
     display: none;
 }
 
-@media (max-width: 1260px){
+@media (max-width: 1200px){
     html, body{
         height: auto;
     }
