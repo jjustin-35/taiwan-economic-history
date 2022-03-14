@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/571e65be0d.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
@@ -53,14 +57,21 @@
         <h3 class="headText">過去70年的台灣經濟發展歷史及相關政策</h3>
     </header>
     <nav>
-        <ul>
+        <ul class="labtopUl">
             <li><a class="active" href="#"><i class="twicon-main-island"></i> 首頁</a></li>
             <li><a href="./second.html"><i class="twicon-taiwanese-bag"></i> 農業改革</a></li>
             <li><a href="./third.html">	<i class="twicon-85tower"></i> 工業改革</a></li>
             <li><a href="./fourth.html"><i class="twicon-taipei101"></i> 經濟起飛</a></li>
             <li><a href="./aboutme.html"><i class="twicon-postbox2"></i> 關於我</a></li>
         </ul>
-        <div class="mobileNav"><i class="fa-solid fa-bars"></i></div>
+        <div class="mobileNav" id="mobileNav"><i class="fa-solid fa-bars"></i></div>
+        <ul class="mobileUl">
+            <li><a class="active" href="#"><i class="twicon-main-island"></i> 首頁</a></li>
+            <li><a href="./second.html"><i class="twicon-taiwanese-bag"></i> 農業改革</a></li>
+            <li><a href="./third.html">	<i class="twicon-85tower"></i> 工業改革</a></li>
+            <li><a href="./fourth.html"><i class="twicon-taipei101"></i> 經濟起飛</a></li>
+            <li><a href="./aboutme.html"><i class="twicon-postbox2"></i> 關於我</a></li>
+        </ul>
     </nav>
     <main>
         <section class="mainBox">
@@ -103,5 +114,6 @@
             </iframe>
         </section>
     </main>
+    <script src="./th-JS.js"></script>
 </body>
 </html>
