@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,10 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/571e65be0d.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
@@ -42,12 +39,14 @@
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-        var chart2 = new google.visualization.LineChart(document.getElementById('curve_chart2'));
 
         chart.draw(data, options);
-        chart2.draw(data, options);
       }
     </script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./twicon/twicon.css">
     <link rel="stylesheet" href="./th-style.css">
 </head>
@@ -67,7 +66,7 @@
         </ul>
     </nav>
     <main>
-        <section class="mainBox">
+        <section class="mainBox Smaller">
             <p>
                 台灣是太平洋中的一個島嶼。今天，這個島上生活著不同的人群，包括福建，客家，其他省份的中國人，台灣原住民和東南亞移民。第二次世界大戰之前，台灣是日本的殖民地。 
                 1895年，由於第一次抗日戰爭失敗，中國將台灣，遼東半島等地賜予日本。第二次世界大戰後，中華民國政府移居台灣，並開始建造該島。中華民國政府在1949年到達台灣時，
@@ -82,8 +81,7 @@
                  之後，他們為農民建立了許多規則，以便他們能夠自給自足。 改善經濟狀況的第二步是發展“輕工業”。 政府開始幫助建立小工廠，生產紡織品，鞋和紙。 這幫助台灣準備轉移到“重工業”。 
                 為了刺激投資，政府鼓勵世界各地的投資者在台灣港口建立工廠。 這次是發展的第三步。 該網站將討論台灣發生了什麼，台灣的政策和變化以及誰來幫助並使所有這些事情發揮作用。 
             </p>
-            <div id="curve_chart" class="desktop" style="width: 800px; height: 600px"></div>
-            <div id="curve_chart2" class="mobile" style="width: 90%; height: 400px;z-index: 0;"></div>
+            <div id="curve_chart" style="width: 900px; height: 500px;z-index: 0;"></div>
         </section>
         <section class="sideBox">
             <h4>
