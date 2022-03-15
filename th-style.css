@@ -5,12 +5,10 @@
     /* box-sizing: border-box; */
     font-family: 'Noto Sans TC', sans-serif;
 }
-/* html, body{
-    height: 100%;
-} */
 h1, h2, h3, h4, h5{
     font-weight: normal;
 }
+/* header */
 header{
     background: #C4C4C4;
     padding: 24px;
@@ -21,6 +19,7 @@ header{
 .headText{
     font-size: 1rem;
 }
+/* nav */
 nav{
     background: #312F2F;
     position: sticky;
@@ -68,33 +67,39 @@ nav ul li a:hover{
     color: black;
     background: white;
 }
+.mobileNav{
+    display: none;
+    color: white;
+}
+.mobileNav i{    
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    transition: all 0.25s ease;
+}
+.mobileNav i:hover{
+    background-color: white;
+    color: black;
+}
+/* main */
 main{
     display:flex;
+    flex-wrap: wrap;
     /* height: 100%; */
     justify-content: center;
+    /* align-items: stretch; */
 }
 section{
     padding: 1.5rem;
 }
+/* mainBox */
 section.mainBox{
-    flex:0 0 auto;
+    flex:1 1 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     /* height: 100%; */
-}
-section.Smaller{
-    width: 70%;
-}
-section.mainBox *{
-    width: 100%;
-}
-.title{
-    padding:0px 10px;
-    margin-top: 1.5rem;
-    text-align: left;
-    border-bottom: 2px rgb(187, 187, 187) solid;
 }
 p{
     padding: 10px;
@@ -103,12 +108,16 @@ p{
 section.mainBox ol{
     padding:0px 1.5rem;
 }
+#curve_chart{
+    width: 100%;
+    height: 80%;
+}
+/* sideBox */
 section.sideBox{
-    flex: auto;
+    flex:1 1 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 100%; */
     background-color: #e9e9e9;
 }
 .sideBox h4{
@@ -116,6 +125,7 @@ section.sideBox{
     font-size: 1.25rem;
     text-align: center;
 }
+/* another CSS */
 .active{
     color: black;
     background: white;
@@ -123,16 +133,6 @@ section.sideBox{
 
 @media (max-width: 1200px){
     html, body{
-        height: auto;
-    }
-    nav ul li{
-        width: 100%;
-    }
-    main{
-       flex-wrap: wrap; 
-    }
-    section.mainBox,section.sideBox{
-        width: 100%; 
         height: auto;
     }
 }
