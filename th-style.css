@@ -95,6 +95,19 @@ img{
     width: 60%;
     padding:2rem 4rem;
 }
+.selfie{
+    margin: 2rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.selfie img{
+    padding: 0%;
+    margin-top: -50px;
+    width: 100%;
+    object-fit: cover;
+}
 /* mainBox */
 .mainBox{
     flex:1 1 700px;
@@ -127,7 +140,6 @@ section.mainBox ol{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #e9e9e9;
 }
 .sideBox h4{
     margin: 1rem 0px;
