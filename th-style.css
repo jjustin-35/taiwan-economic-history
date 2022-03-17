@@ -6,7 +6,7 @@
     font-family: 'Noto Sans TC', sans-serif;
 }
 h1, h2, h3, h4, h5{
-    font-weight: normal;
+    font-weight: bold;
 }
 /* header */
 header{
@@ -155,6 +155,19 @@ div.stretch{
     justify-content: center;
     padding:1.5rem 4rem;
 }
+.box{
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding:1rem;
+}
+div.box{
+    width: 50%;
+    padding: 0%;
+}
+.box p, .box ul{
+    padding:1rem 0%;
+}
 /* another CSS */
 .active{
     color: black;
@@ -183,8 +196,11 @@ div.stretch{
         display: block;
     }
     img{
-        padding: 0%;
+        padding: 1.5rem 0%;
         padding-top: 2rem;
         width: 90%;
+    }
+    div.box{
+        width: 100%;
     }
 }
